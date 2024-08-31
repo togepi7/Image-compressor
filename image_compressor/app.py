@@ -84,5 +84,5 @@ def compress_image():
     return send_file(compressed_image, mimetype=f'image/{format.lower()}', 
                      as_attachment=True, download_name=f'compressed_{final_size:.1f}KB.{format.lower()}')
 
-# if __name__ == '__main__':
-    # app.run(debug=True)
+if __name__ == '__main__':
+     app.run(debug=True)
